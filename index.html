@@ -1,50 +1,280 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-  
-  <head>
-     <img src="WebBanner2023.png"alt="Banner" width="900" height="300">
-      <h1><b>ENG0018 Computer Laboratory 2025/26</b><h1>
-      <h2>Student URN: 6908535</h2>
-      <hr> 
-      <h2 style=”font-family:calibri:”><b>Conference paper: NA</b></h2>
-      <hr>
-      </head>
-  <!style for tables>
-        <style>
-          table {
-            font family: Times New Roman, Serif;
-            border-collapse: collapse;
-            width: 30%
-
-            }
-            
-            td, th {
-              border: 1px soild #2E3D6B;
-              text-align: left;
-              padding 8px;
-            }
-
-            tr:nth-child(even) {
-              background-colour: #2E3D6B;
-            }
-
-
-            
-            
-        </style>
 <head>
-        <style>
-          p.ex1 {
-            margin-left: 250px;
-          }
-          </style>
-            </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ENG0018 Computer Laboratory 2025/26 - Conference Paper</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"
-          <style>
-        .myslides {display:none;}
-      </style>
-        
+  <!-- W3.CSS (kept from original file) -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+  <!-- Page styling -->
+  <style>
+    body {
+      font-family: Calibri, Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fb;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      padding: 0 15px 40px 15px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    header {
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    .urn {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-weight: normal;
+    }
+
+    .subtitle {
+      margin-top: 5px;
+      font-weight: bold;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 10px 0 20px 0;
+    }
+
+    /* Table of contents */
+    .toc {
+      background-color: #eef1fb;
+      border: 1px solid #d5dbf2;
+      padding: 15px 20px;
+      margin: 20px 0 30px 0;
+      border-radius: 4px;
+    }
+
+    .toc h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .toc a {
+      text-decoration: none;
+      color: #2e3d6b;
+    }
+
+    .toc a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main content */
+    main {
+      padding-bottom: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      color: #2e3d6b;
+      border-bottom: 1px solid #d5dbf2;
+      padding-bottom: 5px;
+    }
+
+    p.ex1 {
+      margin-left: 250px;
+    }
+
+    /* Table styling from original (corrected) */
+    table {
+      font-family: "Times New Roman", Serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 15px 0;
+    }
+
+    td,
+    th {
+      border: 1px solid #2e3d6b;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #eef1fb;
+    }
+
+    /* Figure styling */
+    .figure {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .figure img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .figure-caption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 5px;
+      font-style: italic;
+    }
+
+    /* Slideshow placeholder (from original) */
+    .myslides {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <!-- University banner (kept) -->
+      <img src="WebBanner2023.png" alt="Banner" width="900" height="300" />
+
+      <!-- Title (kept) -->
+      <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
+
+      <!-- Student URN (kept) -->
+      <h2 class="urn">Student URN: 6908535</h2>
+      <hr />
+
+      <!-- Conference paper line (kept) -->
+      <h2 class="subtitle">A comparative evaluation of civil engineering challenges in Gatwick Airport expansion proposals</h2>
+      <hr />
+    </header>
+
+    <!-- Table of Contents with section hyperlinks -->
+    <nav class="toc">
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#abstract">Abstract</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#proposal1">Proposal 1: Construction of a new runway to the south</a></li>
+        <li><a href="#proposal2">Proposal 2: Realignment of the existing northern runway</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#references">Reference list</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <!-- Abstract -->
+      <section id="abstract">
+        <h2>Abstract</h2>
+        <p>
+          This article compares two different design proposals for the expansion of Gatwick airport. The first expansion
+          proposal is the construction of a completely new runway to the south of the existing runway. The second
+          expansion proposal is the realignment of an existing inoperative runway (which is to the north of the existing
+          runway). Ultimately while each expansion proposal will lead to two active runways at Gatwick, they achieve this
+          in different ways. This articles evaluation of the engineering challenges and sustainability concerns of each
+          geotechnical design found that the proposal that aligns most with civil engineering principles is the second
+          proposal (the realignment of an existing inoperative runway).
+        </p>
+      </section>
+
+      <!-- Introduction -->
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          Given the growing demand for air transportation, existing airport infrastructure can no longer safely meet the
+          needs of both local and global communities. As a result, an expansion of airport infrastructure around London is
+          necessary to increase capacity and meet growing demand. Gatwick offers a low impact solution to this issue, due
+          to its unique existing infrastructure and location that can support expansion. (Irvine, Budd and Pitfield,
+          2015)
+        </p>
+      </section>
+
+      <!-- Proposal 1 -->
+      <section id="proposal1">
+        <h2>Proposal 1: Construction of a new runway to the south</h2>
+        <p>
+          Although Gatwick is the world's busiest single runway airport (Gatwick Airport Ltd, 2021) (and this design
+          would allow for more annual air transport movements than the second design), it introduces many civil
+          engineering challenges. For example, due to the large land acquisition needed, the existing ecosystem will be
+          significantly disturbed due to the loss of local greenfield sites. (The Airports Commission, 2014) Importantly,
+          Gatwick's existing runway is built over the river Mole (The Airports Commission, 2014) which means that a new
+          runway beyond the airport boundary would require diverting the river around the new airport perimeter before
+          runway construction could start, therefore this proposal isn't just about building a new runway, it’s also
+          rebuilding the local environment to make room for the new runway.
+        </p>
+        <p>
+          Most importantly, this development comes with significant geotechnical challenges due to the nature of the
+          existing Weald clay soil which is poorly drained (British Geological Survey, 2023) and may cause water
+          retention therefore raising concerns about ground stability which may result in uneven runway surfaces and
+          cracks, therefore ground improvements must take place before construction can start. Furthermore, due to this
+          proposal requiring an expansion of the airport boundary the A23 and M23 roads would also need to be moved, all
+          before a runway could even be built. (The Airports Commission, 2014)
+        </p>
+        <p>
+          Therefore, this proposal is very high impact and technically complex, along with the significant environmental
+          and construction challenges that all question its viability. The scale of change to the existing built
+          environment and infrastructure diversions that would need to take place, does not align with the core
+          principles of responsible and sustainable engineering practices. Furthermore, assuming there are no delays in
+          this process (highly unlikely) the runway wouldn't be fully operational for many years, which doesn't address
+          the immediate nature of transportation demand.
+        </p>
+        <figure class="figure">
+          <img src="proposal1-figure1.png" alt="Diagram showing the proposed new southern runway and associated changes to the airport boundary and local infrastructure" />
+          <figcaption class="figure-caption">
+            Figure 1: Land use plan for the Gatwick Airport &#8220;Two Runway&#8221; proposal (Gatwick Airport Ltd, 2012).
+          </figcaption>
+        </figure>
+        <p>
+          Figure 1 shows the master plan for the first proposal with a new runway constructed to the South. This figure
+          visually demonstrates the scale and lack of efficiency of this proposal as the existing northern runway will
+          still be left inoperative while unnecessarily constructing a new runway to the south.
+        </p>
+      </section>
+
+      <!-- Proposal 2 -->
+      <section id="proposal2">
+        <h2>Proposal 2: Realignment of the existing northern runway</h2>
+        <p>
+          <!-- Add your Proposal 2 text here -->
+        </p>
+      </section>
+
+      <!-- Conclusion -->
+      <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>
+          <!-- Add your conclusion text here -->
+        </p>
+      </section>
+
+      <!-- Reference List -->
+      <section id="references">
+        <h2>Reference list</h2>
+        <p>
+          <!-- Add your references here (you can use a list or a table if required) -->
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+
 </html>
+
