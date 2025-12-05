@@ -475,7 +475,42 @@
     // Initial load to display the time on page load
     window.onload = getLastUpdatedTime;
 </script>
+<!-- //////////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////// Word count function ////////////////////////////// -->
+      <!-- //////////////////////////////////////////////////////////////////////////////// -->
+      <!-- Placeholder for total word count -->
+      <p id="totalWordCount"></p>
+      <hr>
+      <script>
+        // Function to calculate word count for a specified section
+        function getSectionWordCount(sectionId) {
+          const element = document.getElementById(sectionId);
+          if (!element) return 0;
 
+          const text = element.textContent || "";
+          const words = text.trim().split(/\s+/).filter(Boolean);
+          return words.length;
+        }
+
+        // Function to calculate and display total word count from selected sections
+        function displayTotalWordCount() {
+          // Word counts for required sections
+          const introductionCount = getSectionWordCount("introduction");
+          const proposal1Count = getSectionWordCount("proposal1");
+          const proposal2Count = getSectionWordCount("proposal2");
+          const conclusionCount = getSectionWordCount("conclusion");
+
+          const totalWordCount = introductionCount + proposal1Count + proposal2Count + conclusionCount;
+
+          const output = document.getElementById("totalWordCount");
+          if (output) {
+            output.innerText = `Total word count (Introduction, Proposal 1, Proposal 2, Conclusion): ${totalWordCount}`;
+          }
+        }
+
+        // Run the word count after the page has fully loaded (without overriding existing onload)
+        window.addEventListener("load", displayTotalWordCount);
+      </script>
     </main>
   </div>
 </body>
